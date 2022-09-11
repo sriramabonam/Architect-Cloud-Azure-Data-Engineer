@@ -1,0 +1,57 @@
+1. b.162.89
+2. c.print(string.format(b,a))
+3. a.print("It goes without saying, \"Time is Money\", and none can deny it.")
+4. a.3.3333333333
+5. c.Greater
+6. c.NameError: name 'numpy' is not defined
+7. d.string[slice(8,13,1)]
+8. b.2
+9. a.num1 = num2
+10.b.Trying to access a key in a dictionary that does not exist
+11.c. ValueError
+12.b. A file or directory is requested but does not exist in the working directory
+13.c. Integer
+14.d. All of the above
+15.a. ( ) b. " " c. {}
+16. 
+dict = {}
+dict["India"] = "Delhi"
+dict["china"] = "Beijing"
+dict["Japan"] = "Tokyo"
+dict["Quatar"] = "Doha"
+dict["France"] = "Marsheilles"
+list = list(dict.items())
+list[4] = 'France', 'paris'
+print(list)
+17.d. tuple_1[3] = 45
+18. 6
+19.
+# triplets no greater than than limi
+def pythagoreanTriplets(limits) :
+    c, m = 0, 2
+ 
+    # Limiting c would limit
+    # all a, b and c
+    while c < limits :
+         
+        # Now loop on n from 1 to m-1
+        for n in range(1, m) :
+            a = m * m - n * n
+            b = 2 * m * n
+            c = m * m + n * n
+ 
+            # if c is greater than
+            # limit then break it
+            if c > limits :
+                break
+ 
+            print(a, b, c)
+ 
+        m = m + 1
+ 
+ 
+# Driver Code
+if __name__ == '__main__' :
+     
+    limit = 18
+    pythagoreanTriplets(limit)
